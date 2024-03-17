@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+
+#ch {
+    display: none;
+}
+
+#ch:checked ~ .content {
+    display: block;
+}
+
+#ch:checked ~ label {
+    display: none;
+}
+
+.content {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background: green;
+    padding: 3px 13px;
+    margin-top: 12px;
+}
